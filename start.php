@@ -1,14 +1,16 @@
 <?PHP
-include "../entites/rayon.php";
-include "../core/RayonC.php";
-$rayon=new Rayon(75757575,'BEN Ahmed');
-$RayonC=new rayonC();
-$RayonC->afficherRayon($rayon);
+include "../entites/produit.php";
+include "../core/ProduitC.php";
+$produit=new Produit(75757575,'BEN Ahmed','450 dinars');
+$ProduitC=new produitC();
+$ProduitC->afficherProduit($produit);
 echo "****************";
 echo "<br>";
-echo "ID_rayon:".$rayon->getID_rayon();
+echo "ID_produit:".$produit->getID_produit();
 echo "<br>";
-echo "nom:".$rayon->getNom();
+echo "nom:".$produit->getNom();
+echo "<br>";
+echo "prix:".$produit->getPrix();
 echo "<br>";
 
 
